@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OldStyleViewController" customModule="PopoverTest" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIKit ViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Giq-XA-qpU">
+                    <rect key="frame" x="130.5" y="155" width="153.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDO-BV-Ikv">
+                    <rect key="frame" x="131.5" y="216" width="151" height="30"/>
+                    <state key="normal" title="Show Popover in UIKit"/>
+                    <connections>
+                        <action selector="showPopoverInUIKitAction:" destination="-1" eventType="touchUpInside" id="QLs-4e-ZtK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUx-q9-qkt">
+                    <rect key="frame" x="135.5" y="286" width="143" height="30"/>
+                    <state key="normal" title="Show SwiftUI Screen"/>
+                    <connections>
+                        <action selector="showSwiftUIScreen:" destination="-1" eventType="touchUpInside" id="1y1-WY-aHE"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="Giq-XA-qpU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="111" id="JPF-Ju-MSI"/>
+                <constraint firstItem="VDO-BV-Ikv" firstAttribute="top" secondItem="Giq-XA-qpU" secondAttribute="bottom" constant="40" id="hud-tw-auC"/>
+                <constraint firstItem="rUx-q9-qkt" firstAttribute="top" secondItem="VDO-BV-Ikv" secondAttribute="bottom" constant="40" id="qTf-0l-ICh"/>
+                <constraint firstItem="rUx-q9-qkt" firstAttribute="centerX" secondItem="VDO-BV-Ikv" secondAttribute="centerX" id="uYH-px-hzO"/>
+                <constraint firstItem="VDO-BV-Ikv" firstAttribute="centerX" secondItem="Giq-XA-qpU" secondAttribute="centerX" id="ugm-4P-k1q"/>
+                <constraint firstItem="Giq-XA-qpU" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="xyD-ZD-0gy"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="131"/>
+        </view>
+    </objects>
+</document>
