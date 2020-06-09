@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D01AD19E248F981500C29C43 /* Navigatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01AD19D248F981500C29C43 /* Navigatable.swift */; };
 		D0FF2E97248ECFA900C40A16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF2E96248ECFA900C40A16 /* AppDelegate.swift */; };
 		D0FF2E99248ECFAA00C40A16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF2E98248ECFAA00C40A16 /* SceneDelegate.swift */; };
 		D0FF2EA0248ECFAD00C40A16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0FF2E9F248ECFAD00C40A16 /* Assets.xcassets */; };
 		D0FF2EA3248ECFAD00C40A16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0FF2EA1248ECFAD00C40A16 /* LaunchScreen.storyboard */; };
 		D0FF2EAF248ED50500C40A16 /* PopoverFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF2EAE248ED50500C40A16 /* PopoverFramework.swift */; };
 		D0FF2EB3248ED57300C40A16 /* SwiftUIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF2EB2248ED57300C40A16 /* SwiftUIScreen.swift */; };
-		D0FF2EB6248ED86E00C40A16 /* OldStyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF2EB4248ED86E00C40A16 /* OldStyleViewController.swift */; };
-		D0FF2EB7248ED86E00C40A16 /* OldStyleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0FF2EB5248ED86E00C40A16 /* OldStyleViewController.xib */; };
+		D0FF2EB6248ED86E00C40A16 /* UIKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF2EB4248ED86E00C40A16 /* UIKitViewController.swift */; };
+		D0FF2EB7248ED86E00C40A16 /* UIKitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0FF2EB5248ED86E00C40A16 /* UIKitViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D01AD19D248F981500C29C43 /* Navigatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigatable.swift; sourceTree = "<group>"; };
 		D0FF2E93248ECFA900C40A16 /* PopoverTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopoverTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0FF2E96248ECFA900C40A16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0FF2E98248ECFAA00C40A16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,8 +28,8 @@
 		D0FF2EA4248ECFAD00C40A16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0FF2EAE248ED50500C40A16 /* PopoverFramework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverFramework.swift; sourceTree = "<group>"; };
 		D0FF2EB2248ED57300C40A16 /* SwiftUIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIScreen.swift; sourceTree = "<group>"; };
-		D0FF2EB4248ED86E00C40A16 /* OldStyleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldStyleViewController.swift; sourceTree = "<group>"; };
-		D0FF2EB5248ED86E00C40A16 /* OldStyleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OldStyleViewController.xib; sourceTree = "<group>"; };
+		D0FF2EB4248ED86E00C40A16 /* UIKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitViewController.swift; sourceTree = "<group>"; };
+		D0FF2EB5248ED86E00C40A16 /* UIKitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIKitViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,9 +63,11 @@
 			isa = PBXGroup;
 			children = (
 				D0FF2EB1248ED54600C40A16 /* SwiftUI */,
-				D0FF2EB0248ED53200C40A16 /* OldStyle */,
+				D0FF2EB0248ED53200C40A16 /* UIKit */,
 				D0FF2E96248ECFA900C40A16 /* AppDelegate.swift */,
 				D0FF2E98248ECFAA00C40A16 /* SceneDelegate.swift */,
+				D01AD19D248F981500C29C43 /* Navigatable.swift */,
+				D0FF2EAE248ED50500C40A16 /* PopoverFramework.swift */,
 				D0FF2E9F248ECFAD00C40A16 /* Assets.xcassets */,
 				D0FF2EA1248ECFAD00C40A16 /* LaunchScreen.storyboard */,
 				D0FF2EA4248ECFAD00C40A16 /* Info.plist */,
@@ -71,14 +75,13 @@
 			path = PopoverTest;
 			sourceTree = "<group>";
 		};
-		D0FF2EB0248ED53200C40A16 /* OldStyle */ = {
+		D0FF2EB0248ED53200C40A16 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				D0FF2EAE248ED50500C40A16 /* PopoverFramework.swift */,
-				D0FF2EB4248ED86E00C40A16 /* OldStyleViewController.swift */,
-				D0FF2EB5248ED86E00C40A16 /* OldStyleViewController.xib */,
+				D0FF2EB4248ED86E00C40A16 /* UIKitViewController.swift */,
+				D0FF2EB5248ED86E00C40A16 /* UIKitViewController.xib */,
 			);
-			path = OldStyle;
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 		D0FF2EB1248ED54600C40A16 /* SwiftUI */ = {
@@ -149,7 +152,7 @@
 			files = (
 				D0FF2EA3248ECFAD00C40A16 /* LaunchScreen.storyboard in Resources */,
 				D0FF2EA0248ECFAD00C40A16 /* Assets.xcassets in Resources */,
-				D0FF2EB7248ED86E00C40A16 /* OldStyleViewController.xib in Resources */,
+				D0FF2EB7248ED86E00C40A16 /* UIKitViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,9 +163,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D01AD19E248F981500C29C43 /* Navigatable.swift in Sources */,
 				D0FF2E97248ECFA900C40A16 /* AppDelegate.swift in Sources */,
 				D0FF2E99248ECFAA00C40A16 /* SceneDelegate.swift in Sources */,
-				D0FF2EB6248ED86E00C40A16 /* OldStyleViewController.swift in Sources */,
+				D0FF2EB6248ED86E00C40A16 /* UIKitViewController.swift in Sources */,
 				D0FF2EB3248ED57300C40A16 /* SwiftUIScreen.swift in Sources */,
 				D0FF2EAF248ED50500C40A16 /* PopoverFramework.swift in Sources */,
 			);

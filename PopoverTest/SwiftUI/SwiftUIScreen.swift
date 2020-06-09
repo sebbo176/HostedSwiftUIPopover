@@ -6,22 +6,37 @@
 //  Copyright © 2020 Sebastian Bolling. All rights reserved.
 //
 
-import Foundation
 import SwiftUI
 
 struct SwiftUIScreen: View {
     
     private let popoverFramework = PopoverFramework()
-    private let activeViewController = UIApplication.shared.keyWindow?.rootViewController
-
-        var body: some View {
-            VStack {
-                Text("Swift UI Screen")
-                Button(action: {
-                    self.popoverFramework.showPopover(from: self.activeViewController!.view, in: self.activeViewController!)
-                }) {
-                    Text("Show popover")
-                }
+    private let keyWindow = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
+    
+    
+    var body: some View {
+        VStack {
+            Text("Swift UI Screen")
+            Button(action: {
+                self.popoverFramework.showPopover(from: self.topViewController.view, in: self.topViewController)
+            }) {
+                Text("Show popover")
             }
+            Spacer()
         }
+    }
+}
+
+
+private extension SwiftUIScreen {
+    
+    var topViewController: UIViewController {
+        if var topController = self.keyWindow?.rootViewController {
+            while let presentedViewController = topController.presentedViewController {
+                topController = presentedViewController
+            }
+            return topController
+        }
+        fatalError()
+    }
 }

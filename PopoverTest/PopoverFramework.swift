@@ -6,7 +6,6 @@
 //  Copyright © 2020 Sebastian Bolling. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 class PopoverFramework {

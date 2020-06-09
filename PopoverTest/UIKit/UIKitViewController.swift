@@ -7,9 +7,8 @@
 //
 
 import UIKit
-import SwiftUI
 
-class OldStyleViewController: UIViewController {
+class UIKitViewController: UIViewController, Navigatable {
     
     private let popoverFramework = PopoverFramework()
     
@@ -17,9 +16,7 @@ class OldStyleViewController: UIViewController {
         popoverFramework.showPopover(from: sender, in: self)
     }
     
-    @IBAction func showSwiftUIScreen(_ sender: Any) {
-        let vc = UIHostingController(rootView: SwiftUIScreen())
-        vc.modalPresentationStyle = .automatic
-        present(vc, animated: true)
+    @IBAction func showSwiftUIScreen(_ sender: UIView?) {
+        showSwiftUIModal(sender: sender)
     }
 }
